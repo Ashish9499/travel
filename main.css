@@ -1,0 +1,165 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: rgb(225, 240, 17);
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .head {
+      font-size: 40px;
+      font-weight: bold;
+  }
+
+
+  h1 {
+    margin: 0 0 20px;
+    font-weight: 400;
+    color: #1c87c9;
+    }
+    p {
+    margin: 0 0 5px;
+    }
+
+
+  .main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    }
+
+    .topnav {
+        top: 70px;
+        overflow: hidden;
+        background-color: rgb(230, 230, 46);
+        justify-content: center;
+      }
+      
+      .topnav a {
+        float:left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        left: 40px;
+        width: 20%;
+      }
+
+      .center {
+          right:40px;
+      }
+      
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /*first navbar*/
+      .firstnav {
+        top: 70px;
+        overflow: hidden;
+        background-color: rgb(230, 230, 46);
+        justify-content: center;
+      }
+      
+      .firstnav a {
+        float:left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        left: 40px;
+        width: 20%;
+      }
+
+      .center {
+          right:30px;
+      }
+      
+      .firstnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+    .input-icons i {
+        position: absolute;
+    }
+      
+    .input-icons {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+      
+    .icon {
+        padding: 10px;
+        min-width: 50px;
+        text-align: center;
+    }
+
+    .input-field {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    form {
+        padding: 25px;
+        margin: 25px;
+        box-shadow: 0 2px 5px #f5f5f5; 
+        background: #f5f5f5; 
+        }
+
+        input, textarea {
+            width: calc(100% - 18px);
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #1c87c9;
+            outline: none;
+            }
+
+        input::placeholder {
+            color: #666;
+            }
+
+            button {
+                width: 100%;
+                padding: 20px;
+                border: none;
+                background: hsl(0, 0%, 3%); 
+                font-size: 22px;
+                font-weight: 400;
+                color: #fff;
+                }
+                button:hover {
+                background: #2371a0;
+                }    
+
+                @media (min-width: 568px) {
+                    .main-block {
+                    flex-direction: row;
+                    }
+                    .left-part, form {
+                    width: 40%;
+                     position:absolute;
+                     right: 60px;  
+                     top: 280px;          
+                }
+                .right-part{
+                    width: 60%;
+                    position: absolute;
+                    left: 90px;
+                    top: 580px;
+                }
+                    }
